@@ -1,13 +1,13 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var expect = require('expect');
-var $ = require('jQuery');
 var TestUtils = require('react-addons-test-utils');
+var expect = require('expect');
+var $ = require('jquery');
 
 var TodoApp = require('TodoApp');
 
 describe('TodoApp', () => {
-  it('should exist', ()=> {
+  it('should exist', () => {
     expect(TodoApp).toExist();
   });
 
@@ -22,7 +22,6 @@ describe('TodoApp', () => {
     expect(todoApp.state.todos[0].createdAt).toBeA('number');
   });
 
-
   it('should toggle completed value when handleToggle called', () => {
     var todoData = {
       id: 11,
@@ -31,7 +30,6 @@ describe('TodoApp', () => {
       createdAt: 0,
       completedAt: undefined
     };
-
     var todoApp = TestUtils.renderIntoDocument(<TodoApp/>);
     todoApp.setState({todos: [todoData]});
 
@@ -41,16 +39,15 @@ describe('TodoApp', () => {
     expect(todoApp.state.todos[0].completedAt).toBeA('number');
   });
 
-  // Test that when toggled from true to false, completedAt get removed
-  it('should remove completedAt when toggled from true to false', () => {
+  // Test that when toggle from true to false, completedAt get removed
+  it('should toggle todo from completed to incompoleted', () => {
     var todoData = {
       id: 11,
       text: 'Test features',
       completed: true,
       createdAt: 0,
-      completedAt: 875433432432
+      completedAt: 123
     };
-
     var todoApp = TestUtils.renderIntoDocument(<TodoApp/>);
     todoApp.setState({todos: [todoData]});
 

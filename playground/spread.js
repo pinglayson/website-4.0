@@ -4,32 +4,29 @@
 //
 // console.log(add(3, 1));
 //
-// var toAdd = [4, 6];
+// var toAdd = [9, 5];
 // console.log(add(...toAdd));
 
 // var groupA = ['Jen', 'Cory'];
 // var groupB = ['Vikram'];
-// var final = [3, ...groupA];
+// var final = [...groupB, 3, ...groupA];
 //
 // console.log(final);
 
 var person = ['Andrew', 25];
 var personTwo = ['Jen', 29];
+// Hi Andrew, you are 25
 
-function hiiiifunc(name, age) {
-  console.log('Hi '+ name + ' you are '+ age);
+function greet (name, age) {
+  console.log('Hi ' + name + ', you are ' + age);
 }
-
-// hiiiifunc(...person);
-// hiiiifunc(...personTwo);
+greet(...person);
+greet(...personTwo);
 
 var names = ['Mike', 'Ben'];
-//var final = ['Andrew', ...names];
+var final = ['Andrew', ...names];
+// Hi Andrew
 
-function loophi(final){
-  final.forEach(function(value){
-    console.log('Hi '+ value);
-  });
-}
-
-loophi(names);
+final.forEach(function (name) {
+  console.log('Hi ' + name);
+});
