@@ -1,10 +1,14 @@
 import React from 'react';
+import Header from 'Header';
+import Footer from 'Footer';
 
 export class Main extends React.Component {
   render () {
     return (
       <div>
-        <p>Main.jsx</p>
+        <Header/>
+        <div>Main.jsx</div>
+        <Footer/>
       </div>
     );
   }
