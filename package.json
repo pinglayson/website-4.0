@@ -1,14 +1,14 @@
 {
   "name": "boilerplate",
   "version": "1.0.0",
-  "description": "Simple react app",
+  "description": "boilerplate with react, redux, foundation sites, karma testing",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test karma start",
     "build": "webpack",
     "start": "npm run build && node server.js"
   },
-  "author": "Andrew Mead",
+  "author": "Ping John Layson",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.9.1",
