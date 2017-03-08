@@ -14,9 +14,10 @@ export class Header extends React.Component {
         </div>
         <div className="title-bar-right">
           <ul className="menu">
-            <li className="hide-for-small-only"><a href="#">HOME</a></li>
-            <li className="hide-for-small-only"><a href="#">TOOLS</a></li>
-            <li className="hide-for-small-only"><a href="property-news">ARTICLES</a></li>
+            <li className="hide-for-small-only"><a href="#"><i className="fa fa-home fa-lg" aria-hidden="true"></i>HOME</a></li>
+            <li className="hide-for-small-only"><a href="#"><i className="fa fa-calculator fa-lg" aria-hidden="true"></i>TOOLS</a></li>
+            <li className="hide-for-small-only"><a href="property-news"><i className="fa fa-newspaper-o fa-lg" aria-hidden="true"></i>ARTICLES</a></li>
+            <li className="hide-for-small-only"><a href="property-news">REGISTER/LOGIN</a></li>
             <li>
               <ul className="dropdown menu" data-dropdown-menu>
                 <li>
@@ -25,6 +26,7 @@ export class Header extends React.Component {
                     <li className="show-for-small-only"><a href="/">Home</a></li>
                     <li className="show-for-small-only"><a href="/">Tools</a></li>
                     <li className="show-for-small-only"><a href="property-news">Articles</a></li>
+                    <li className="show-for-small-only"><a href="property-news">Register/Login</a></li>
                     <li><a href="property-search?asking_price_max=&asking_price_min=&max_bathroom=&min_bathroom=&level=&furnishing=&resource_type=&listing_type=sale&">Property Search</a></li>
                     <ul className="vertical menu">
                       <li><a href="property-search?asking_price_max=&asking_price_min=&max_bathroom=&min_bathroom=&level=&furnishing=&resource_type=&listing_type=sale&">For Sale</a></li>
