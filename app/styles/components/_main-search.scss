@@ -1,0 +1,16 @@
+.main-search {
+  .hero-background {
+    background-position: center;
+    background-image: url("/img/main-bg.jpg");
+    width: 100vw;
+    height: 100vh;
+  }
+  .main-search-container {
+    padding-top: $large-padding;
+  }
+  .double-input-container {
+    .fa-arrow-right {
+      padding-top: 2.2rem;
+    }
+  }
+}
