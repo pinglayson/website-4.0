@@ -12,10 +12,10 @@ export class Main extends React.Component {
           <Header/>
         </div>
         <div className="expanded row">
-          <div className="small-12 medium-6 column">
+          <div className="small-12 medium-12 large-6 column no-padding-left">
             <MainSearch/>
           </div>
-          <div className="small-12 medium-6 column">
+          <div className="small-12 medium-12 large-6 column">
             <MainContent/>
           </div>
         </div>

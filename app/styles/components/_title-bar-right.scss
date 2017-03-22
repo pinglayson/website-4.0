@@ -1,0 +1,8 @@
+.title-bar-right {
+  a {
+    color: $white-text;
+  }
+  @media screen and (max-width: $break-small) {
+    margin-top: 0.5rem;
+  }
+}

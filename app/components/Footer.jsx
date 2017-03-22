@@ -3,7 +3,7 @@ import React from 'react';
 export class Footer extends React.Component {
   render () {
     return (
-      <div className="expanded row">
+      <div className="expanded row footer">
         <div className="expanded row">
           <div className="small-7 medium-6 columns">
             <dl>

@@ -8,12 +8,12 @@ export class MainSearch extends React.Component {
 
         </div>
         <div className="show-for-large" data-sticky-container>
-          <div className="show-for-large sticky hero-background" data-sticky data-options="marginTop:3.4;" data-top-anchor="main-content:top" data-btm-anchor="main-content:bottom">
+          <div className="show-for-large sticky hero-background" data-sticky data-options="marginTop:4.5;" data-top-anchor="main-content:top" data-btm-anchor="main-content:bottom">
 
             <div className="main-search-container row column">
               <div className="search-container row column">
                 <div className="small-8 small-centered columns text-center">
-                  <h3>The Edge Property. Your home for real estate</h3>
+                  <h3 className="white-text-with-shadow">The Edge Property. Your home for real estate</h3>
                 </div>
                 <div className="small-11 small-centered columns no-padding-sides">
                   <div className="search-tabs small-12 columns no-padding-sides">
@@ -26,8 +26,8 @@ export class MainSearch extends React.Component {
                       </div>
                     </div>
                     <div className="small-7 columns">
-                      <div className="small-8 columns no-padding-sides">Check Valuation</div>
-                      <div className="small-4 columns">Research</div>
+                      <div className="small-8 columns no-padding-sides white-text-with-shadow">Check Valuation</div>
+                      <div className="small-4 columns white-text-with-shadow">Research</div>
                     </div>
                   </div>
                   <div className="main-search-text">
@@ -89,9 +89,9 @@ export class MainSearch extends React.Component {
                   <div className="search-more-options row extended">
                     <div className="small-8 columns no-padding-right">
                       <input ref="belowValuation" type="checkbox" />
-                      <label className="super-no-margin-right">Show me only properties below valuation</label>
+                      <label className="super-no-margin-right white-text-with-shadow">Show me only properties below valuation</label>
                     </div>
-                    <div className="small-4 columns no-padding-left text-right">
+                    <div className="small-4 columns no-padding-left text-right white-text-with-shadow">
                       <h5>More Options</h5>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ export class MainSearch extends React.Component {
               </div>
 
               <div className="search-footer">
-                <label>&nbsp;<i className="fa fa-apple fa-lg" aria-hidden="true"></i> Get Edge Property on iOS &nbsp;<i className="fa fa-android fa-lg" aria-hidden="true"></i> Get Edge Property on Android</label>
+                <label className="white-text-with-shadow">&nbsp;<i className="fa fa-apple fa-lg" aria-hidden="true"></i> Get Edge Property on iOS &nbsp;<i className="fa fa-android fa-lg" aria-hidden="true"></i> Get Edge Property on Android</label>
               </div>
 
             </div>
