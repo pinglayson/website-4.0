@@ -3,18 +3,6 @@ import React from 'react'
 export class Header extends React.Component {
   componentDidMount() {
    $(document).foundation();
-  //  $("#main-dropdown-menu").click(function(){
-  //    //alert($(this).hasClass("is-active"));
-  //    if($(this).hasClass("is-active")){
-  //      //Foundation.Dropdown.close($("#main-dropdown-menu-container"));
-  //     //  $("close-dropdown-menu").trigger("click");
-  //     setTimeout(function () {
-  //       $(this).removeClass("is-active opens-inner");
-  //       $(this).addClass("opens-right");
-  //       $('.super-scrollable-menu').removeClass("js-dropdown-active");
-  //     },200);
-  //    }
-  //  });
   }
   render () {
     return (
