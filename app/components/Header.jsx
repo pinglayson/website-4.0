@@ -2,7 +2,19 @@ import React from 'react'
 
 export class Header extends React.Component {
   componentDidMount() {
-     $(document).foundation();
+   $(document).foundation();
+  //  $("#main-dropdown-menu").click(function(){
+  //    //alert($(this).hasClass("is-active"));
+  //    if($(this).hasClass("is-active")){
+  //      //Foundation.Dropdown.close($("#main-dropdown-menu-container"));
+  //     //  $("close-dropdown-menu").trigger("click");
+  //     setTimeout(function () {
+  //       $(this).removeClass("is-active opens-inner");
+  //       $(this).addClass("opens-right");
+  //       $('.super-scrollable-menu').removeClass("js-dropdown-active");
+  //     },200);
+  //    }
+  //  });
   }
   render () {
     return (
@@ -21,12 +33,12 @@ export class Header extends React.Component {
             <li className="show-for-small-only"><a href="property-news"><i className="fa fa-newspaper-o fa-lg" aria-hidden="true"></i></a></li>
             <li className="hide-for-small-only"><a href="property-news"><small>REGISTER/LOGIN</small></a></li>
             <li>
-              <ul className="dropdown menu" data-dropdown-menu>
-                <li>
-                  <button className="menu-icon" type="button"></button>
+              <ul id="main-dropdown-menu-container" className="dropdown menu" data-dropdown-menu data-close-on-click-inside>
+                <li id="main-dropdown-menu">
+                  <button className="menu-icon" type="button" ></button>
                   <ul className="vertical menu super-scrollable-menu">
-                    <li className="show-for-small-only"><a href="property-news">Register/Login</a></li>
-                    <li><a href="property-search?asking_price_max=&asking_price_min=&max_bathroom=&min_bathroom=&level=&furnishing=&resource_type=&listing_type=sale&">Property Search</a></li>
+                    <li className="show-for-small-only"><a href="property-news"><strong>Register/Login</strong></a></li>
+                    <li><a href="property-search?asking_price_max=&asking_price_min=&max_bathroom=&min_bathroom=&level=&furnishing=&resource_type=&listing_type=sale&"><strong>Property Search</strong></a></li>
                     <ul className="vertical menu">
                       <li><a href="property-search?asking_price_max=&asking_price_min=&max_bathroom=&min_bathroom=&level=&furnishing=&resource_type=&listing_type=sale&">&ensp;For Sale</a></li>
                       <li><a href="property-search?asking_price_max=&asking_price_min=&max_bathroom=&min_bathroom=&level=&furnishing=&resource_type=&listing_type=rental&">&ensp;For Rent</a></li>
@@ -36,24 +48,26 @@ export class Header extends React.Component {
                       <li><a href="right_item_3">&ensp;By Estate</a></li>
                       <li><a href="right_item_3">&ensp;By Property Directory</a></li>
                     </ul>
-                    <li><a>Condo</a></li>
+                    <li><a><strong>Condo</strong></a></li>
                     <ul className="vertical menu">
                       <li><a href="right_item_3">&ensp;By District</a></li>
                       <li><a href="right_item_3">&ensp;By Map</a></li>
                     </ul>
-                    <li><a>HDB</a></li>
+                    <li><a><strong>HDB</strong></a></li>
                     <ul className="vertical menu">
                       <li><a href="right_item_3">&ensp;By Estate</a></li>
                       <li><a href="right_item_3">&ensp;By Map</a></li>
                     </ul>
-                    <li><a href="new-launches">New Project</a></li>
-                    <li><a href="property-agents">Find Agent</a></li>
-                    <li><a href="featured-focus">Featured Focus</a></li>
-                    <li><a href="events">Upcoming Events</a></li>
+                    <li><a href="new-launches"><strong>New Project</strong></a></li>
+                    <li><a href="property-agents"><strong>Find Agent</strong></a></li>
+                    <li><a href="featured-focus"><strong>Featured Focus</strong></a></li>
+                    <li><a href="events"><strong>Upcoming Events</strong></a></li>
+                    <li id="close-dropdown-menu"></li>
                   </ul>
                 </li>
               </ul>
             </li>
+
           </ul>
         </div>
       </div>
